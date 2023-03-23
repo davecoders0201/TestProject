@@ -46,31 +46,6 @@ const Login = ({navigation}) => {
     retrieveData();
   }, []);
 
-  // ------------------handle Login Function-----------------------
-  // This is a function using the firebase authentication and validate through Email and Password
-  // const handleLogin = async () => {
-  //   try {
-  //     const isUserLogin = await auth().signInWithEmailAndPassword(
-  //       email,
-  //       password,
-  //     );
-  //     if (isSelected) {
-  //       await AsyncStorage.setItem('email', email);
-  //       await AsyncStorage.setItem('password', password);
-  //     } else {
-  //       await AsyncStorage.removeItem('email');
-  //       await AsyncStorage.removeItem('password');
-  //       // emailInputRef.current.clear();
-  //       // passwordInputRef.current.clear();
-  //     }
-  //     setIsAuthenticated(true);
-  //     navigation.navigate('DrawerContent');
-  //   } catch (error) {
-  //     alert('Invalid Email and Password');
-  //     console.log(error);
-  //   }
-  // };
-
   const handleLogin = async () => {
     // Validate inputs
     if (!email.trim()) {
