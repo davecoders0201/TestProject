@@ -4,8 +4,8 @@ This Application was created with Firebase Integration, This is the FullStack Ap
 
 ## Introduction
 
-[![React Native](https://img.shields.io/badge/React%20Native-0.71-blue.svg?style=rounded-square)](https://facebook.github.io/react-native/)
-[![Node.js](https://img.shields.io/badge/Node.js-v.18.16-green.svg?style=rounded-square)](https://nodejs.org/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.71-blue.svg?style=rounded-square)](https://facebook.github.io/react-native/)
+[![Node.js](https://img.shields.io/badge/Node.js-v18.16-green.svg?style=rounded-square)](https://nodejs.org/)
 [![Firebase](https://img.shields.io/badge/firebase-v9.20.0-blue.svg?style=rounded-square)](https://firebase.google.com/)
 
 ### What is React Native ?
