@@ -12,6 +12,7 @@ import {StyleSheet} from 'react-native';
 import aboutUs from './../drawerScreen/aboutUs';
 import ContactUs from '../drawerScreen/contactUs';
 import UserData from './../drawerScreen/userData';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Drawer = createDrawerNavigator();
 
@@ -26,7 +27,11 @@ class Sidebar extends React.Component {
               <DrawerItemList {...props} />
               <DrawerItem
                 label="Logout"
-                onPress={() => props.navigation.navigate('Login')}
+                onPress={() => [
+                  props.navigation.navigate('Login'),
+                  AsyncStorage.removeItem('email'),
+                  AsyncStorage.removeItem('password'),
+                ]}
               />
             </DrawerContentScrollView>
           );
