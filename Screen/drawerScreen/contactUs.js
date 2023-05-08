@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import React, {useState, useRef} from 'react';
 import CheckBox from '@react-native-community/checkbox';
-import { async } from 'validate.js';
+import {async} from 'validate.js';
 
 const ContactUs = ({navigation}) => {
   const [name, setName] = useState('');
@@ -23,11 +23,10 @@ const ContactUs = ({navigation}) => {
   const helpRemove = useRef(null);
 
   const submit = async () => {
-    if(!name && !email && !phone && !message){
-      alert("Please enter the all field");
+    if (!name && !email && !phone && !message) {
+      alert('Please enter the all field');
       return;
-    }
-    else {
+    } else {
       alert(`Thank You ${name}`);
       // navigation.navigate('Home');
     }
@@ -58,7 +57,6 @@ const ContactUs = ({navigation}) => {
       setCheckValidPhone(true);
     }
   };
-
 
   return (
     <View style={styles.mainContainer}>
@@ -98,7 +96,7 @@ const ContactUs = ({navigation}) => {
         <TextInput
           style={styles.inputStyle}
           placeholder={'Enter Phone'}
-          keyboardType= 'numeric'
+          keyboardType="numeric"
           // value={phone}
           onChangeText={phone => validatePhone(phone)}
           onChange={validatePhone}
@@ -107,7 +105,9 @@ const ContactUs = ({navigation}) => {
       </View>
 
       {checkValidPhone ? (
-        <Text style={styles.textFailed}>Please Enter Proper 10 digit Phone</Text>
+        <Text style={styles.textFailed}>
+          Please Enter Proper 10 digit Phone
+        </Text>
       ) : (
         <Text style={styles.blockText}> </Text>
       )}
@@ -161,6 +161,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     backgroundColor: '#fff',
   },
+
   mainHeader: {
     fontSize: 24,
     color: '#344055',
@@ -170,6 +171,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Nunito_700Bold',
     textTransform: 'capitalize',
   },
+
   description: {
     fontSize: 18,
     color: '#7d7d7d',
@@ -181,8 +183,8 @@ const styles = StyleSheet.create({
   inputContainer: {
     marginTop: 20,
   },
+
   labels: {
-    // fontWeight: "bold",
     fontSize: 15,
     color: '#7d7d7d',
     paddingBottom: 5,
@@ -190,6 +192,7 @@ const styles = StyleSheet.create({
     lineHeight: 25,
     fontWeight: 'bold',
   },
+
   inputStyle: {
     borderWidth: 1,
     borderColor: 'rgba(0, 0, 0, 0.3)',
@@ -199,9 +202,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: 'bold',
   },
+
   multiineStyle: {
     paddingVertical: 4,
   },
+
   buttonStyle: {
     borderRadius: 5,
     paddingVertical: 10,
@@ -211,15 +216,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginVertical: 30,
   },
+
   buttonText: {
     color: '#eee',
   },
+
   wrapper: {
     display: 'flex',
     flexDirection: 'row',
     marginTop: 20,
     fontFamily: 'WorkSans_400Regular',
   },
+
   wrapperText: {
     marginLeft: 10,
     marginTop: 5,
@@ -228,6 +236,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+
   textFailed: {
     alignSelf: 'center',
     color: 'red',
@@ -235,6 +244,7 @@ const styles = StyleSheet.create({
     marginBottom: -10,
     marginTop: 10,
   },
+
   blockText: {
     marginTop: -20,
   },

@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 100,
   },
+
   mainHeader: {
     fontSize: 18,
     color: '#344055',
@@ -54,17 +55,20 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontFamily: 'Nunito_700Bold',
   },
+
   paraStyle: {
     fontSize: 18,
     color: '#7d7d7d',
     paddingBottom: 30,
     fontFamily: 'WorkSans_400Regular',
   },
+
   aboutLayout: {
     backgroundColor: '#4c5dab',
     paddingHorizontal: 30,
     marginTop: 20,
   },
+
   aboutSubHeader: {
     fontSize: 18,
     color: '#fff',
@@ -74,12 +78,14 @@ const styles = StyleSheet.create({
     fontFamily: 'Nunito_700Bold',
     alignSelf: 'center',
   },
+
   aboutPara: {
     color: '#fff',
     fontSize: 18,
     fontFamily: 'WorkSans_400Regular',
     lineHeight: 26,
   },
+
   menuContainer: {
     width: '100%',
     flexDirection: 'row',

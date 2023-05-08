@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     paddingVertical: 50,
     backgroundColor: '#ebedee',
   },
+
   card: {
     width: 250,
     // height: 350,
@@ -75,6 +76,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 20,
   },
+
   bioDataContainer: {
     width: '100%',
     display: 'flex',
@@ -85,17 +87,20 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     fontFamily: 'WorkSans_400Regular',
   },
+
   idNumber: {
     fontSize: 20,
     color: 'rgba(255, 255, 255, 0.5)',
     fontFamily: 'WorkSans_400Regular',
     paddingRight: 10,
   },
+
   bioData: {
     fontSize: 30,
     color: '#fff',
     fontFamily: 'WorkSans_400Regular',
   },
+
   mainHeader: {
     fontSize: 30,
     color: '#a18ce5',
@@ -103,13 +108,16 @@ const styles = StyleSheet.create({
     fontFamily: 'WorkSans_400Regular',
     paddingVertical: 50,
   },
+
   imgContainer: {
     padding: 10,
   },
+
   imgStyle: {
     width: '100%',
     height: 180,
   },
+
   mainContain: {
     padding: 10,
     backgroundColor: '#353535',
@@ -117,6 +125,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 5,
     paddingBottom: 20,
   },
+
   myName: {
     fontSize: 14,
     color: '#fff',

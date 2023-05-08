@@ -61,9 +61,11 @@ const styles = StyleSheet.create({
     height: undefined,
     aspectRatio: 1,
   },
+
   mainContainer: {
     paddingHorizontal: 20,
   },
+
   courseContainer: {
     padding: 30,
     backgroundColor: 'rgba(255, 255, 255, 0.90)',
@@ -76,6 +78,7 @@ const styles = StyleSheet.create({
     elevation: 8,
     marginVertical: 30,
   },
+
   mainHeader: {
     fontSize: 22,
     color: '#344055',
@@ -85,6 +88,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'Nunito_700Bold',
   },
+
   description: {
     textAlign: 'left',
     fontFamily: 'WorkSans_400Regular',
@@ -93,11 +97,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#7d7d7d',
   },
+
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
   },
+
   buttonStyle: {
     backgroundColor: '#ff5435',
     borderRadius: 5,
@@ -107,6 +113,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   buttonText: {
     fontSize: 20,
     color: '#eee',

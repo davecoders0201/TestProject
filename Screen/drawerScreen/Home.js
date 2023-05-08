@@ -1,12 +1,6 @@
 import * as React from 'react';
 import 'react-native-gesture-handler';
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  Dimensions,
-} from 'react-native';
+import {StyleSheet, Text, View, Image, Dimensions} from 'react-native';
 const {width, height} = Dimensions.get('window');
 class Home extends React.Component {
   render() {
@@ -47,6 +41,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 10,
   },
+
   headerImage: {
     height: undefined,
     width: '100%',
@@ -59,7 +54,7 @@ const styles = StyleSheet.create({
 
   mainHeader: {
     fontSize: 20,
-    textTransform: "uppercase",
+    textTransform: 'uppercase',
     color: '#344055',
     marginTop: 15,
   },
@@ -71,10 +66,10 @@ const styles = StyleSheet.create({
     marginTop: 0,
   },
 
-  paraStyle:{
-    textAlign: "left",
+  paraStyle: {
+    textAlign: 'left',
     fontSize: 19,
-    color: "#7d7d7d",
+    color: '#7d7d7d',
     marginTop: 30,
     paddingBottom: 50,
     lineHeight: 26,
