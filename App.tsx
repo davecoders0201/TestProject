@@ -7,6 +7,7 @@ import Reg from './Screen/components/Reg';
 import DrawerContent from './Screen/drawerDisplay/DrawerContent';
 import CourseDetails from './Screen/drawerScreen/CourseDetails';
 import ForgotPass from './Screen/components/forgotPass';
+import Payment from './Screen/paymentScreen/Payment';
 
 // Create a Reference of the Stack which will display in the screen stack wise
 const Stack = createNativeStackNavigator();
@@ -28,6 +29,7 @@ class App extends React.Component {
           This is Outside of Dashbaord */}
           <Stack.Screen name="DrawerContent" component={DrawerContent} />
           <Stack.Screen name="CourseDetails" component={CourseDetails} />
+          <Stack.Screen name="Payment" component={Payment} />
         </Stack.Navigator>
       </NavigationContainer>
     );
