@@ -21,7 +21,7 @@ const CheckoutForm = ({navigation}) => {
   const handleCardFieldChange = complete => {
     setCardToken(complete);
   };
-  //   console.log('Card Token:::', cardToken);
+  console.log('Card Token:::', cardToken);
 
   return (
     <StripeProvider publishableKey="pk_test_51MnbtkSI6t5fguBrmy2ra7DzScbuIFLeY6dNVuEUEuw5xeBeHrG1zL99iyAaGCWuR5MJ7826jrXUptevBxAcn5lo00NdhrhOI5">
