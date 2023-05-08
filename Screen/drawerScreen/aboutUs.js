@@ -1,9 +1,4 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-} from 'react-native';
+import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
 
 const AboutUs = () => {
@@ -55,7 +50,6 @@ const styles = StyleSheet.create({
     color: '#344055',
     textTransform: 'uppercase',
     fontWeight: '500',
-    // marginTop: 50,
     marginTop: 40,
     marginBottom: 10,
     fontFamily: 'Nunito_700Bold',
@@ -69,7 +63,6 @@ const styles = StyleSheet.create({
   aboutLayout: {
     backgroundColor: '#4c5dab',
     paddingHorizontal: 30,
-    // marginVertical: 30,
     marginTop: 20,
   },
   aboutSubHeader: {
