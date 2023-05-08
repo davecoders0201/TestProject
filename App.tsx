@@ -8,6 +8,7 @@ import DrawerContent from './Screen/drawerDisplay/DrawerContent';
 import CourseDetails from './Screen/drawerScreen/CourseDetails';
 import ForgotPass from './Screen/components/forgotPass';
 import Payment from './Screen/paymentScreen/Payment';
+import CheckoutForm from './Screen/paymentScreen/CheckoutForm';
 
 // Create a Reference of the Stack which will display in the screen stack wise
 const Stack = createNativeStackNavigator();
@@ -30,6 +31,7 @@ class App extends React.Component {
           <Stack.Screen name="DrawerContent" component={DrawerContent} />
           <Stack.Screen name="CourseDetails" component={CourseDetails} />
           <Stack.Screen name="Payment" component={Payment} />
+          <Stack.Screen name="CheckoutForm" component={CheckoutForm} />
         </Stack.Navigator>
       </NavigationContainer>
     );
