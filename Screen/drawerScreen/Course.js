@@ -45,7 +45,7 @@ const Course = ({navigation}) => {
   };
 
   return (
-    // Flatlist is a Prop which is use for the Scrolling the Items 
+    // Flatlist is a Prop which is use for the Scrolling the Items
     <FlatList
       keyExtractor={item => item.id}
       data={Courseapi}
@@ -53,7 +53,6 @@ const Course = ({navigation}) => {
     />
   );
 };
-
 
 // This is One type of css in the React Native File
 const styles = StyleSheet.create({
