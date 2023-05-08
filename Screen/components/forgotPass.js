@@ -9,7 +9,6 @@ import {
   Image,
 } from 'react-native';
 
-
 //this is the main Forgot password Function which is Export in next page
 const ForgotPass = () => {
   const [checkValidEmail, setCheckValidEmail] = useState(false);
@@ -29,13 +28,12 @@ const ForgotPass = () => {
   const forgetPassword = email => {
     if (!email) {
       alert('Enter Email');
-      return
+      return;
     }
     alert('Email sent SuccessFully');
     emailRemove.current.clear();
     return auth().sendPasswordResetEmail(email);
   };
-
 
   return (
     <View style={styles.mainContainer}>
@@ -59,7 +57,6 @@ const ForgotPass = () => {
         <Text style={styles.blockText}> </Text>
       )}
 
-
       <TouchableOpacity
         style={[styles.buttonStyle]}
         onPress={() => forgetPassword(email)}>
@@ -78,6 +75,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   image: {
     marginTop: 30,
     marginBottom: 30,
@@ -86,6 +84,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     marginLeft: 70,
   },
+
   labels: {
     // fontWeight: "bold",
     fontSize: 15,
@@ -95,6 +94,7 @@ const styles = StyleSheet.create({
     lineHeight: 25,
     fontWeight: 'bold',
   },
+
   inputStyle: {
     borderWidth: 1,
     borderColor: 'rgba(0, 0, 0, 0.3)',
@@ -104,6 +104,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: 'bold',
   },
+
   TextInput: {
     height: 50,
     flex: 1,
@@ -111,11 +112,13 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     fontSize: 16,
   },
+
   mainContainer: {
     height: '100%',
     paddingHorizontal: 30,
     backgroundColor: '#fff',
   },
+
   mainHeader: {
     fontSize: 24,
     color: '#344055',
@@ -126,6 +129,7 @@ const styles = StyleSheet.create({
     textTransform: 'capitalize',
     textAlign: 'center',
   },
+
   buttonStyle: {
     borderRadius: 5,
     paddingVertical: 10,
@@ -137,9 +141,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#ff5435',
     marginTop: 20,
   },
+
   buttonText: {
     color: '#eee',
   },
+
   textFailed: {
     alignSelf: 'center',
     color: 'red',
@@ -147,6 +153,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     marginTop: 12,
   },
+
   blockText: {
     marginTop: -20,
   },

@@ -268,6 +268,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   image: {
     // marginTop: -100,
     marginBottom: 30,
@@ -277,6 +278,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   inputView: {
     backgroundColor: 'transparent',
     borderBottomWidth: 2,
@@ -287,6 +289,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     fontWeight: 'bold',
   },
+
   TextInput: {
     height: 50,
     flex: 1,
@@ -296,19 +299,23 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     // textAlign: 'center',
   },
+
   wrapperIcon: {
     position: 'absolute',
     right: 0,
     padding: 10,
   },
+
   icon: {
     width: 32,
     height: 26,
   },
+
   forgot_button: {
     height: 30,
     marginBottom: 30,
   },
+
   registerBtn: {
     width: '40%',
     borderRadius: 15,
@@ -319,6 +326,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ff5435',
     fontSize: 200,
   },
+
   disableRegisterBtn: {
     width: '40%',
     borderRadius: 15,
@@ -329,6 +337,7 @@ const styles = StyleSheet.create({
     fontSize: 200,
     backgroundColor: 'grey',
   },
+
   TextStyle: {
     color: 'black',
     textAlign: 'center',
@@ -337,6 +346,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     padding: 10,
   },
+
   textFailed: {
     alignSelf: 'center',
     color: 'red',
@@ -344,9 +354,11 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     marginTop: -12,
   },
+
   blockText: {
     marginTop: -20,
   },
+
   loginTextStyle: {
     color: '#ff5435',
     textAlign: 'center',
