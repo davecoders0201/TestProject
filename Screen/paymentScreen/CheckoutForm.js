@@ -37,7 +37,7 @@ const CheckoutForm = ({navigation}) => {
               style={{width: '100%', height: 50, marginBottom: 16}}
             />
             <TouchableOpacity
-              //   onPress={{}}
+              //   onPress={handleCard}
               disabled={!cardToken || processingPayment} // disable button if cardToken is null/undefined or if payment is processing
               style={{
                 backgroundColor: processingPayment ? '#ccc' : '#007bff',
