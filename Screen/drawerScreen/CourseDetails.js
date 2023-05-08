@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     // backgroundColor: "red",
     paddingHorizontal: 20,
   },
+
   courseContainer: {
     padding: 30,
     backgroundColor: 'rgba(255, 255, 255, 0.90)',
@@ -107,6 +108,7 @@ const styles = StyleSheet.create({
     fontFamily: 'WorkSans_400Regular',
     lineHeight: 20,
   },
+
   subCourse: {
     textTransform: 'uppercase',
     color: '#344055',
@@ -132,6 +134,7 @@ const styles = StyleSheet.create({
     fontFamily: 'WorkSans_400Regular',
     textAlign: 'center',
   },
+
   buttonStyle: {
     backgroundColor: '#809fff',
     borderBottomRightRadius: 5,
@@ -142,6 +145,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   buttonText: {
     fontSize: 20,
     color: '#eee',
