@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   },
 
   description: {
-    textAlign: 'left',
+    textAlign: 'justify',
     fontFamily: 'WorkSans_400Regular',
     paddingBottom: 15,
     lineHeight: 20,

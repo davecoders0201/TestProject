@@ -1,24 +1,33 @@
 import * as React from 'react';
 import 'react-native-gesture-handler';
-import {StyleSheet, Text, View, Image, Dimensions} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Dimensions,
+  ScrollView,
+} from 'react-native';
 const {width, height} = Dimensions.get('window');
 class Home extends React.Component {
   render() {
     const description =
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ';
+      'The MD Technical Education app is a user-friendly and comprehensive mobile application designed to enhance technical education and skills development. It provides a convenient platform for students, professionals, and enthusiasts to access a wide range of technical courses, tutorials, and resources. ';
     return (
-      <View style={styles.mainContainer}>
-        <View style={styles.homeTop}>
-          <Image
-            style={styles.headerImage}
-            resizeMode="contain"
-            source={require('../../asset/HomeLogo.jpg')}
-          />
-          <Text style={styles.mainHeader}>Welcome to</Text>
-          <Text style={styles.mainHeaderChild}>MD Technical</Text>
-          <Text style={styles.paraStyle}>{description}</Text>
+      <ScrollView>
+        <View style={styles.mainContainer}>
+          <View style={styles.homeTop}>
+            <Image
+              style={styles.headerImage}
+              resizeMode="contain"
+              source={require('../../asset/HomeLogo.jpg')}
+            />
+            <Text style={styles.mainHeader}>Welcome to</Text>
+            <Text style={styles.mainHeaderChild}>MD Technical</Text>
+            <Text style={styles.paraStyle}>{description}</Text>
+          </View>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -67,7 +76,7 @@ const styles = StyleSheet.create({
   },
 
   paraStyle: {
-    textAlign: 'left',
+    textAlign: 'justify',
     fontSize: 19,
     color: '#7d7d7d',
     marginTop: 30,
