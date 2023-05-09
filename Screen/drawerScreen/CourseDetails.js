@@ -54,7 +54,6 @@ const CourseDetails = ({navigation, route}) => {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    // backgroundColor: "red",
     paddingHorizontal: 20,
   },
 
@@ -124,7 +123,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#344055',
     color: '#eee',
     paddingVertical: 10,
-    paddingHorizontal: 15,
+    paddingHorizontal: 20,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -140,7 +139,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 5,
     borderTopRightRadius: 5,
     paddingVertical: 10,
-    paddingHorizontal: 18,
+    paddingHorizontal: 20,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
