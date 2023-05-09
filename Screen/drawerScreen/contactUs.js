@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 import React, {useState, useRef} from 'react';
 import CheckBox from '@react-native-community/checkbox';
-import {async} from 'validate.js';
 
 const ContactUs = ({navigation}) => {
   const [name, setName] = useState('');
@@ -115,7 +114,7 @@ const ContactUs = ({navigation}) => {
       <View style={styles.inputContainer}>
         <Text style={styles.labels}> How can we help you? </Text>
         <TextInput
-          style={[styles.inputStyle, styles.multilineStyle]}
+          style={[styles.inputStyle, styles.multiineStyle]}
           placeholder={'Tell us about your self'}
           value={message}
           onChangeText={msg => setMessage(msg)}
