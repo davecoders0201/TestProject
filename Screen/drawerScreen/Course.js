@@ -83,7 +83,6 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: '#344055',
     textTransform: 'uppercase',
-    // fontWeight: 500,
     paddingBottom: 15,
     textAlign: 'center',
     fontFamily: 'Nunito_700Bold',
